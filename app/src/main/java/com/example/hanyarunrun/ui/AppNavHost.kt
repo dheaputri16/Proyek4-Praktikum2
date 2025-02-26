@@ -15,6 +15,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
+import com.example.hanyarunrun.ui.screen.SplashScreen
 import com.example.hanyarunrun.ui.screen.home.HomeScreen
 import com.example.hanyarunrun.ui.screen.profile.ProfileScreen
 import com.example.hanyarunrun.viewmodel.DataViewModel
@@ -29,10 +30,17 @@ fun AppNavHost(viewModel: DataViewModel) {
     ) { innerPadding ->
         NavHost(
             navController = navController,
-            startDestination = "home",
+            startDestination = "splash",
             modifier = Modifier.padding(innerPadding)
         ) {
             composable("home") { HomeScreen() }
+            composable("splash") {
+                SplashScreen(navigateToHome = {
+                    navController.navigate("home") {
+                        popUpTo("splash") { inclusive = true } // Hapus splash dari back stack
+                    }
+                })
+            }
             composable("list") { DataListScreen(navController, viewModel) }
             composable("profile") {
                 val viewModel: ProfileViewModel = ViewModelProvider(LocalContext.current as ViewModelStoreOwner)

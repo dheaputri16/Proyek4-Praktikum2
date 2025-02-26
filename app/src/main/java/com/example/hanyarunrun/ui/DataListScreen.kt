@@ -92,15 +92,15 @@ fun DataListScreen(navController: NavHostController, viewModel: DataViewModel) {
                                 ) {
                                     Button(
                                         onClick = { navController.navigate("edit/${item.id}") },
-                                        shape = RoundedCornerShape(8.dp),
-                                        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+                                        shape = RoundedCornerShape(16.dp),
+                                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFFC0CB)),
                                     ) {
                                         Text(text = "Edit")
                                     }
                                     Button(
                                         onClick = { viewModel.deleteData(item) },
                                         shape = RoundedCornerShape(8.dp),
-                                        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+                                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFFC0CB))
                                     ) {
                                         Text(text = "Delete")
                                     }
