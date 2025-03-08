@@ -1,0 +1,32 @@
+[
+  {"id": 1, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BANDUNG", "jumlah_lowongan_kerja": 1200, "satuan": "LOWONGAN KERJA", "tahun": 2019},
+  {"id": 2, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BOGOR", "jumlah_lowongan_kerja": 1500, "satuan": "LOWONGAN KERJA", "tahun": 2019},
+  {"id": 3, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BEKASI", "jumlah_lowongan_kerja": 1800, "satuan": "LOWONGAN KERJA", "tahun": 2019},
+  {"id": 4, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA DEPOK", "jumlah_lowongan_kerja": 1000, "satuan": "LOWONGAN KERJA", "tahun": 2019},
+  {"id": 5, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA CIREBON", "jumlah_lowongan_kerja": 900, "satuan": "LOWONGAN KERJA", "tahun": 2019},
+
+  {"id": 6, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN BANDUNG", "jumlah_lowongan_kerja": 1100, "satuan": "LOWONGAN KERJA", "tahun": 2020},
+  {"id": 7, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN BOGOR", "jumlah_lowongan_kerja": 1300, "satuan": "LOWONGAN KERJA", "tahun": 2020},
+  {"id": 8, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN BEKASI", "jumlah_lowongan_kerja": 1400, "satuan": "LOWONGAN KERJA", "tahun": 2020},
+  {"id": 9, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN CIANJUR", "jumlah_lowongan_kerja": 700, "satuan": "LOWONGAN KERJA", "tahun": 2020},
+  {"id": 10, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN CIREBON", "jumlah_lowongan_kerja": 800, "satuan": "LOWONGAN KERJA", "tahun": 2020},
+
+  {"id": 11, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BANDUNG", "jumlah_lowongan_kerja": 1600, "satuan": "LOWONGAN KERJA", "tahun": 2021},
+  {"id": 12, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BOGOR", "jumlah_lowongan_kerja": 1900, "satuan": "LOWONGAN KERJA", "tahun": 2021},
+  {"id": 13, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BEKASI", "jumlah_lowongan_kerja": 2200, "satuan": "LOWONGAN KERJA", "tahun": 2021},
+
+  {"id": 14, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN BANDUNG", "jumlah_lowongan_kerja": 1500, "satuan": "LOWONGAN KERJA", "tahun": 2022},
+  {"id": 15, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN BOGOR", "jumlah_lowongan_kerja": 1700, "satuan": "LOWONGAN KERJA", "tahun": 2022},
+  {"id": 16, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN BEKASI", "jumlah_lowongan_kerja": 2000, "satuan": "LOWONGAN KERJA", "tahun": 2022},
+
+  {"id": 17, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BANDUNG", "jumlah_lowongan_kerja": 1700, "satuan": "LOWONGAN KERJA", "tahun": 2023},
+  {"id": 18, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BOGOR", "jumlah_lowongan_kerja": 2000, "satuan": "LOWONGAN KERJA", "tahun": 2023},
+  {"id": 19, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BEKASI", "jumlah_lowongan_kerja": 2500, "satuan": "LOWONGAN KERJA", "tahun": 2023},
+
+  {"id": 20, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN BANDUNG", "jumlah_lowongan_kerja": 1900, "satuan": "LOWONGAN KERJA", "tahun": 2024},
+  {"id": 21, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KABUPATEN BOGOR", "jumlah_lowongan_kerja": 2200, "satuan": "LOWONGAN KERJA", "tahun": 2024},
+
+  {"id": 22, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BANDUNG", "jumlah_lowongan_kerja": 2000, "satuan": "LOWONGAN KERJA", "tahun": 2025},
+  {"id": 23, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BOGOR", "jumlah_lowongan_kerja": 2300, "satuan": "LOWONGAN KERJA", "tahun": 2025},
+  {"id": 24, "nama_provinsi": "JAWA BARAT", "nama_kabupaten_kota": "KOTA BEKASI", "jumlah_lowongan_kerja": 2800, "satuan": "LOWONGAN KERJA", "tahun": 2025}
+]

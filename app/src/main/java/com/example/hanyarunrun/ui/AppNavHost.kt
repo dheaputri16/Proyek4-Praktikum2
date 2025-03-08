@@ -1,25 +1,34 @@
 package com.example.hanyarunrun.ui
 
+import android.app.Application
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Person
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.material3.Icon
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.navigation.NavType
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.example.hanyarunrun.viewmodel.DataViewModel
+import kotlinx.coroutines.delay
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelStoreOwner
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
-import androidx.navigation.NavType
-import androidx.navigation.compose.*
-import androidx.navigation.navArgument
 import com.example.hanyarunrun.ui.screen.SplashScreen
 import com.example.hanyarunrun.ui.screen.home.HomeScreen
-import com.example.hanyarunrun.ui.screen.profile.ProfileScreen
-import com.example.hanyarunrun.viewmodel.DataViewModel
-import com.example.hanyarunrun.viewmodel.ProfileViewModel
+import com.example.hanyarunrun.viewmodel.DataViewModelFactory
 
 @Composable
 fun AppNavHost(viewModel: DataViewModel) {
@@ -43,9 +52,8 @@ fun AppNavHost(viewModel: DataViewModel) {
             }
             composable("list") { DataListScreen(navController, viewModel) }
             composable("profile") {
-                val viewModel: ProfileViewModel = ViewModelProvider(LocalContext.current as ViewModelStoreOwner)
-                    .get(ProfileViewModel::class.java)
-                ProfileScreen(viewModel = viewModel)
+                val dataViewModel: DataViewModel = viewModel(factory = DataViewModelFactory(LocalContext.current.applicationContext as Application))
+                ProfileScreen(navController, dataViewModel)
             }
             composable("form") { DataEntryScreen(navController, viewModel) }
             composable(
